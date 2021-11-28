@@ -17,7 +17,7 @@ print(f'Média final: {media}')
 #name=input('Qual é o seu nome?\n')
 #print(f"Nome: {name}")
 
-prompt='Qual a velocidae rasante de uma andorinha livre?    '
+prompt='Qual a velocidae rasante de uma andorinha livre?   '
 velocidade=input(prompt)
 print(int(velocidade))
 print(int(velocidade)**5)
