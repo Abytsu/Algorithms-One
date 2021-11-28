@@ -107,3 +107,4 @@ print(xz[0]+xz[1]+xz[2]+xz[3]+xz[4]+xz[5]+xz[6]) # Concatenação (sempre começ
 print(xz[1:5])
 print(xz[1:3])
 print(xz[0:2])
+ 
