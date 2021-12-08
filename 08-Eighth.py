@@ -98,12 +98,15 @@ q='7'
 ini='{:-^90}'.format(f' Questão {q} ')
 print('\n\n',ini,'\n\n')
 i=float(input('> Insira o valor de i (inteiro e positivo): '))
-while i<0:
-    i=float(input('\n> O valor de "i" não pode ser menor que 0. Por favor, insira outro valor.\n> '))
 q7_test=((i*2)%2)
-while q7_test>0:
-    i=float(input('\n> A variável "i" não pode ser float, apenas int. Por favor, insira outro valor.\n> '))
+while i<0 or q7_test>0:
     q7_test=((i*2)%2)
+    if i<0:
+        i=float(input('\n> O valor de "i" não pode ser menor que 0. Por favor, insira outro valor.\n> '))
+        q7_test=((i*2)%2)
+    if q7_test>0:
+        i=float(input('\n> A variável "i" não pode ser float, apenas int. Por favor, insira outro valor.\n> '))
+        q7_test=((i*2)%2)
 a=float(input('> Insira o valor de a (peso 2): '))
 b=float(input('> Insira o valor de b (peso 3): '))
 c=float(input('> Insira o valor de c (peso 4): '))
