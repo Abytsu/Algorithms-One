@@ -93,3 +93,28 @@ if orcamento<0:
 if orcamento==0:
     situacao='orçamento estourado'
 print(f'\n\t\t- Gastos dentro do orçamento -\n\n- Salário da pessoa física: {salario} R$\n- Despesas: -{gasto} R$\n- Restante: {orcamento} R$\n- Situação monetária: {situacao}')
+# Questão 7 (extra)
+q='7'
+ini='{:-^90}'.format(f' Questão {q} ')
+print('\n\n',ini,'\n\n')
+i=float(input('> Insira o valor de i (inteiro e positivo): '))
+while i<0:
+    i=float(input('\n> O valor de "i" não pode ser menor que 0. Por favor, insira outro valor.\n> '))
+q7_test=((i*2)%2)
+while q7_test>0:
+    i=float(input('\n> A variável "i" não pode ser float, apenas int. Por favor, insira outro valor.\n> '))
+    q7_test=((i*2)%2)
+a=float(input('> Insira o valor de a (peso 2): '))
+b=float(input('> Insira o valor de b (peso 3): '))
+c=float(input('> Insira o valor de c (peso 4): '))
+if i<=10:
+    if i== 2 or i==4 or i==6 or i==8 or i== 10:
+        media=(((a)+(b)+(c))/3)
+    mediatipo='aritmética simples.'
+    if i!= 2 and i!=4 and i!=6 and i!=8 and i!= 10:
+        media='calculo não definido'
+        mediatipo='indefinido - valor de "i" é impar.'
+elif i>10:
+    media=(((a*2)+(b*3)+(c*4))/(2+3+4))
+    mediatipo='aritmética ponderada.'
+print(f'\n- O resultado da média é: {media}\n- O tipo de média calculado foi: {mediatipo}\n- Valor da varíavel "i" inserido: {int(i)}')
